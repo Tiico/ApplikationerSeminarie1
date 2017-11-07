@@ -151,7 +151,6 @@ body{
     #recent .post {
         width: 100%;
         padding-right: 15%; 
-        margin-left: 100px;
     }
     #recent .post .button{
         margin-right: 5%;
@@ -179,7 +178,7 @@ body{
     color: darkblue;
     text-decoration: underline;
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1000px){
     #ingredients img{
         width: 80%;
     }
@@ -256,8 +255,9 @@ body{
 .commentsection .comment p{
     margin-top: 1%;
 }
+/*
 #calendar {
-    width: 70%;
+    width: 100%;
     margin: auto;
     padding: 0;
     list-style: none;
@@ -266,8 +266,7 @@ body{
 }
 
 #calendar li {
-    width: calc(96%/7);
-    height: calc(100%/4);
+    width: calc(98%/7);
     float: left;
     display: block;
     text-align: left;
@@ -276,9 +275,9 @@ body{
 }
 #calendar li img{
     vertical-align: top;
-    padding: 20% 0% 0% 3%;
-    height: 80%;
-    width: 60%;
+    padding: 0% 0% 0% 3%;
+    height: 100%;
+    width: 50%;
 }
 
 #calendar li.day {
@@ -301,4 +300,96 @@ body{
     vertical-align: top;
     text-decoration: none;
     margin: 0;
+}
+*/
+
+#calendar {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#calendar a {
+    color: #8e352e;
+    text-decoration: none;
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar li {
+    display: block;
+    float: left;
+    width:calc(100%/7);
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+    height: 40px;
+    background: #8e352e;
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#calendar .days li {
+    height: 180px;
+}
+
+#calendar .days li:hover {
+    background: #d3d3d3;
+}
+
+#calendar .date {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    width: 20px;
+    border-radius: 50%;
+    float: right;
+}
+#calendar .image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================
+                Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+    #calendar .weekdays, #calendar .other-month {
+        display: none;
+    }
+    
+    #calendar li {
+        height: auto !important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+
+    #calendar .date {
+        float: none;
+    }
 }
