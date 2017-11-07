@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tasty Recipes</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="Nicklas Ockelberg" content="Seminarie 1">
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+
+    <body>
+        <h1 id="header"><a href="index.html">Tasty Recipes</a></h1>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="calendar.html">Calendar</a>
+            <div class="dropdown">
+                <button class="dropbtn">Recipes 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="meatballs.html">Meatballs</a>
+                    <a href="pancakes.html">Pancakes</a>
+                </div>
+            </div> 
+        </div>
+        <div id="container">
+            <h2 class="title">Meatballs</h2>
+            <div id="ingredients">
+                <img src="images/meatballs.jpeg" alt="Meatballs">
+
+                <div class="ingrTable">
+                    <h4>Ingredients:</h4>
+                    <table>
+                        <tr>
+                            <td>500 g</td>
+                            <td>Minced Meat</td>
+                        </tr>
+                        <tr>
+                            <td>1/2 dl</td>
+                            <td>Breadcrumbs</td>
+                        </tr>
+                        <tr>
+                            <td>1 dl</td>
+                            <td>Cream</td>
+                        </tr>
+                        <tr>
+                            <td>2 tbsp</td>
+                            <td>Finely-chopped Onion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Egg</td>
+                        </tr>
+                        <tr>
+                            <td>1 Pinch</td>
+                            <td>Blackpepper</td>
+                        </tr>
+                        <tr>
+                            <td>2 msk</td>
+                            <td>Butter/Oil</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div id="method">
+                <div id="summary">
+                    <ul>
+                        <li>Servings: 4</li>
+                        <li>Prep: 30 min</li>
+                        <li>Cook: 15 min</li>
+                        <li>Total: 45 min</li>
+                    </ul>
+                </div>
+                <h2 class="title">Method</h2>
+                <p>Mix breadcrumbs and cream. Let swell 10 min. Add the meat, onions, eggs, salt and pepper. Stir to a smooth smear. Form the batter to even buns. Fry them in butter/oil on medium heat for 3-5 minutes.
+                </p>
+            </div>
+            <hr>
+            <div class="commentsubmit">
+                <form action="#" id="userform">
+                    Name:<br> 
+                    <input type="text" name="username" required>
+                    <button type="submit">Send  </button>
+                </form>
+
+                <textarea name="commententer" form="userform" rows="4" required placeholder="Enter comment here..."></textarea>
+            </div>
+            <hr>
+            <div class="commentsection">
+                <h2>Comments:</h2>
+                <div class="comment">
+                    <h3>Nicklas:</h3>
+                    <p>Wonderful recipe!</p>
+                </div>
+                <div class="comment">
+                    <h3>Kent:</h3>
+                    <p>Absolutely delicious!</p>
+                </div>
+                <div class="comment">
+                    <h3>Dimitri:</h3>
+                    <p>водка</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

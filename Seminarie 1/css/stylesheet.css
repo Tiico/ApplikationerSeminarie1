@@ -1,0 +1,304 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Asap');
+body{
+    background-image: url("/images/background.jpg");
+    position: relative;
+    font-family: Asap;
+}
+#header{
+    margin-left: 17%;
+    padding: 1% 0% 1% 0%;
+    color: white;
+    font-family: Lobster;
+    font-size: 40px;
+    text-shadow: 4px 0 0 #000;
+}
+#header a:link{
+    color: white;
+    text-decoration: none;
+}
+#header a:visited{
+    color: white;
+    text-decoration: none;
+}
+#header a{
+    text-decoration: none;
+}
+#container, #main{
+    margin-left: 17%;
+    margin-right: 17%;
+    background-color: white;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 5px #2f2828
+}
+#container h2{
+    font-size: 25px;
+    padding: 1% 1% 1% 0%;
+    text-decoration: underline;
+}
+#container hr{
+    width: 75%;
+    height: 1px;
+    background: #000;
+    opacity: 0.2;
+    margin-top: 25px;
+}
+.title{
+    margin-left: 15%;
+
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Asap;
+    margin-left: 17%;
+    margin-right: 17%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #333;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #564f4f;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#recent{
+    margin: 3% 0 0% 15%;
+    overflow: hidden;
+}
+#recent .post{
+    width: 40%;
+    float: left;
+    margin-right: 2%;
+    margin-top: 2.5%;
+}
+#recent .post h3{
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+    padding-bottom: 7%
+}
+#recent .post img{
+    width: 60%;
+}
+#recent .post p{
+    padding: 2%;
+}
+#recent .post .button{
+    float: right;
+    padding: 2%;
+    color: white;
+    background: #2f2828;
+    border-radius: 10px;
+    text-decoration: none;
+}
+@media screen and (max-width:600px){
+    #recent .post {
+        width: 100%;
+        padding-right: 15%; 
+        margin-left: 100px;
+    }
+    #recent .post .button{
+        margin-right: 5%;
+    }
+    #method #summary{
+        display: block;
+    }
+}
+#welcome{
+    margin: 0% 15% 3% 15%;
+}
+#welcome h2{
+    padding-bottom: 2%;
+    padding-top: 3%
+}
+#welcome a:link{
+    color: darkblue;
+    text-decoration: none;
+}
+#welcome a:visited{
+    color: darkblue;
+    text-decoration: none;
+}
+#welcome a:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+@media screen and (max-width:1200px){
+    #ingredients img{
+        width: 80%;
+    }
+    #ingredients .ingrTable tr td{
+        padding: 7%;
+        
+    }
+}
+@media screen and (max-width:920px){
+    #method #summary{
+        display: block;
+    }
+}
+#ingredients img{
+    margin-left: 15%;
+    margin-top: 3%;
+}
+.ingrTable{
+    float: right;
+    margin-right: 17%;
+    margin-bottom: 25px;
+}
+.ingrTable h4{
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+.ingrTable table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.ingrTable th, td {
+    padding: 5px;
+    text-align: left;
+}
+#method p, .commentsubmit, .commentsection{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+}
+#method #summary ul{
+    color:  white;
+    padding: 0.5%;
+    background-color: #2f2828;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 5px;
+}
+#method #summary li{
+    display: inline-flex;
+    padding: 1% 2% 1% 1%;
+    border-right: 1px solid #e6e6e6;
+    text-align: center;
+}
+.commentsubmit textarea{
+    width: 232px;
+}
+.commentsubmit button{
+    padding: 1%;
+    margin-bottom: 1%;
+    color: white;
+    background: #2f2828;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.commentsection{
+    margin-top: 1%;
+}
+.commentsection .comment h3{
+    font-size: 19px;
+    text-decoration: underline;
+    margin-top: 2%;
+    color: coral;
+}
+.commentsection .comment p{
+    margin-top: 1%;
+}
+#calendar {
+    width: 70%;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    overflow: hidden;
+}
+
+#calendar li {
+    width: calc(96%/7);
+    height: calc(100%/4);
+    float: left;
+    display: block;
+    text-align: left;
+    border: 1px solid;
+
+}
+#calendar li img{
+    vertical-align: top;
+    padding: 20% 0% 0% 3%;
+    height: 80%;
+    width: 60%;
+}
+
+#calendar li.day {
+    background: #ffffa0;
+    text-align: center;
+    line-height: 4;
+    font-weight: 900;
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+#calendar li a {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    line-height: 4;
+    color: #000;
+    text-align: left;
+    vertical-align: top;
+    text-decoration: none;
+    margin: 0;
+}

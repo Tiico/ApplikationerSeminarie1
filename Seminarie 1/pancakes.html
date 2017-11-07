@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tasty Recipes</title>
+        <meta name="Nicklas Ockelberg" content="Seminarie 1">
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+
+    <body>
+        <h1 id="header"><a href="index.html">Tasty Recipes</a></h1>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="calendar.html">Calendar</a>
+            <div class="dropdown">
+                <button class="dropbtn">Recipes 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="meatballs.html">Meatballs</a>
+                    <a href="pancakes.html">Pancakes</a>
+                </div>
+            </div> 
+        </div>
+        <div id="container">
+            <h2 class="title">Pancakes</h2>
+            <div id="ingredients">
+                <img src="images/pancakes.png" alt="Pancakes">
+
+                <div class="ingrTable">
+                    <h4>Ingredients:</h4>
+                    <table>
+                        <tr>
+                            <td>2 1/2 dl</td>
+                            <td>Flour</td>
+                        </tr>
+                        <tr>
+                            <td>1/2 tsp</td>
+                            <td>Salt</td>
+                        </tr>
+                        <tr>
+                            <td>6 dl</td>
+                            <td>Milk</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Egg</td>
+                        </tr>
+                        <tr>
+                            <td>3 tbsp</td>
+                            <td>Butter</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Jam, berries or fruit</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div id="method">
+                <div id="summary">
+                    <ul>
+                        <li>Servings: 4</li>
+                        <li>Prep: 15 min</li>
+                        <li>Cook: 30 min</li>
+                        <li>Total: 45 min</li>
+                    </ul>
+                </div>
+                <h2 class="title">Method</h2>
+                <p>
+                    Mix flour and salt in a bowl. Whisk in half of the milk and whisk to a smooth batter. Add the rest of the milk and the eggs.
+                    Melt the butter in the frying pan and add to the batter. Fry thin pancakes of the batter in a frying pan or pancake pan. Serve with jam, berries or fruit.
+                </p>
+            </div>
+            <hr>
+            <div class="commentsubmit">
+                <form action="#" id="userform">
+                    Name:<br> 
+                    <input type="text" name="username" required>
+                    <button type="submit">Send</button>
+                </form>
+
+                <textarea name="commententer" form="userform" rows="4" required placeholder="Enter comment here..."></textarea>
+            </div>
+            <hr>
+            <div class="commentsection">
+                <h2>Comments:</h2>
+                <div class="comment">
+                    <h3>Nicklas:</h3>
+                    <p>Wonderful recipe!</p>
+                </div>
+                <div class="comment">
+                    <h3>Kent:</h3>
+                    <p>Absolutely delicious!</p>
+                </div>
+                <div class="comment">
+                    <h3>Dimitri:</h3>
+                    <p>водка</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
